@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button1"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信名字"
+            android:textSize="14sp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/text_color_light"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/button2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="用户ID "
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="226452 "
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/button2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="剩余房卡 "
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/fangka"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="202 "
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/button2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="充值金额 "
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:id="@+id/shiyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/ershi"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/register_check"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/xy_bg"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10元"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ershi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/register_check1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/xy_bg"
+                        android:checked="false"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20元"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/wushiyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/ershi"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/register_check2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_margin="5dp"
+                        android:checked="true"
+                        android:background="@drawable/xy_bg"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50元"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@mipmap/bg"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="充值"
+            />
+    </LinearLayout>
+    <com.work.nzqpdaili.view.CircleImageView
+        android:id="@+id/mine_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/fimg5" />
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/close"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/all_layout"
+        android:layout_marginTop="25dp"
+        />
+</RelativeLayout>

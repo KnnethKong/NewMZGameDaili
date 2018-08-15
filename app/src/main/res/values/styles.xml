@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+    <!-- HUD提示框 -->
+    <style name="SimpleHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@drawable/simplehud_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="SplashTheme" parent="android:Theme.NoTitleBar.Fullscreen">
+
+        <!-- 闪屏背景，可用图片 -->
+        <item name="android:windowBackground">@mipmap/launch</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="myTransparent">  
+            <item name="android:windowBackground">@color/bantouming</item>  
+            <item name="android:windowNoTitle">true</item>  
+            <item name="android:windowIsTranslucent">true</item>  
+            <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>  
+    </style>
+</resources>

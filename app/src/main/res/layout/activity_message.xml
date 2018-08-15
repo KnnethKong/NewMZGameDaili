@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    >
+    <include layout="@layout/header_title"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+
+        android:background="@color/white_alpha_6"/>
+    <zuo.biao.library.ui.xlistview.XListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/white"
+        android:background="@color/white"
+        android:dividerHeight="0dp"
+        ></zuo.biao.library.ui.xlistview.XListView>
+</LinearLayout>

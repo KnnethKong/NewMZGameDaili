@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/guide_serach" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:layout_toLeftOf="@+id/rl_tv"
+                android:layout_marginRight="20dp"
+                android:id="@+id/pull_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pull_icon_big" />
+
+            <ImageView
+                android:layout_toLeftOf="@+id/rl_tv"
+                android:id="@+id/refreshing_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/refreshing_black"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:id="@+id/rl_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+              android:layout_centerHorizontal="true"
+                android:id="@+id/state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pull_to_refresh"
+                android:textColor="@color/text_color_6"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/state_tv"
+                android:id="@+id/last_refresh_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xlistview_header_last_time"
+                android:textColor="@color/text_color_6"
+                android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_toLeftOf="@+id/rl_tv"
+                android:id="@+id/state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
